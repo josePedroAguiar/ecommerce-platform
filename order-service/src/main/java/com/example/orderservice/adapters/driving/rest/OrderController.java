@@ -1,10 +1,7 @@
 package com.example.orderservice.adapters.driving.rest;
-
-
-
-
 import com.example.orderservice.application.port.OrderDTO;
-import com.example.orderservice.application.services.OrderService;
+import com.example.orderservice.application.port.DrivingPort;
+
 import com.example.orderservice.domain.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +16,7 @@ import java.util.stream.Collectors;
 public class OrderController {
 
     @Autowired
-    private OrderService orderService;
+    private DrivingPort orderService;
 
     private OrderDTO mapToDTO(Order order) {
         OrderDTO dto = new OrderDTO();

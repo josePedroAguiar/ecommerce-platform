@@ -1,6 +1,7 @@
 package com.example.userservice.application.service;
 
 import com.example.userservice.application.ports.UserRepository;
+import com.example.userservice.application.ports.DrivingPort;
 import com.example.userservice.domain.User;
 import com.example.userservice.domain.Wallet;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserService {
+public class UserService implements DrivingPort {
 
     @Autowired
     private UserRepository userRepository;

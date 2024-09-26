@@ -1,7 +1,7 @@
 package com.example.productservice.adapters.driven.mongodb;
 
 import com.example.productservice.domain.Product;
-import com.example.productservice.application.ports.OutboundPort;
+import com.example.productservice.application.ports.DrivingPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class MongoProductRepositoryAdapter implements OutboundPort {
+public class MongoProductRepositoryAdapter implements DrivingPort {
 
     @Autowired
     private MongoProductRepository mongoRepository;

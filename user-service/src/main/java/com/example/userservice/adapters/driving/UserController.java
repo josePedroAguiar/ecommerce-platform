@@ -1,7 +1,7 @@
 package com.example.userservice.adapters.driving;
 
 
-import com.example.userservice.application.service.UserService;
+import com.example.userservice.application.ports.DrivingPort;
 import com.example.userservice.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +14,7 @@ import java.util.Optional;
 public class UserController {
 
     @Autowired
-    private UserService userService;
+    private DrivingPort userService;
 
     @GetMapping
     public List<User> getAllUsers() {

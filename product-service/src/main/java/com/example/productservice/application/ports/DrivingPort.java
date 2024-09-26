@@ -5,7 +5,7 @@ import com.example.productservice.domain.Product;
 import java.util.List;
 import java.util.Optional;
 
-public interface OutboundPort {
+public interface DrivingPort {
     List<Product> findAll();
     Optional<Product> findById(String id);
     Product save(Product product);

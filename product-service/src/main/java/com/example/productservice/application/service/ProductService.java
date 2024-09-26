@@ -1,7 +1,7 @@
 package com.example.productservice.application.service;
 
 import com.example.productservice.application.ports.InboundPort;
-import com.example.productservice.application.ports.OutboundPort;
+import com.example.productservice.application.ports.DrivingPort;
 import com.example.productservice.domain.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ import java.util.Optional;
 public class ProductService implements InboundPort {
 
     @Autowired
-    private OutboundPort productRepository;
+    private DrivingPort productRepository;
     @Autowired
     private VatRateService vatRateService; // Inject VAT Rate Service
 
@@ -88,14 +88,12 @@ public class ProductService implements InboundPort {
         product.setFinalPrice(finalPriceCents); // Store the final price in the product
 
     }
-    // New method to fetch products by name
     public List<Product> getProductsByName(String name) {
         // Call the repository or perform the logic to retrieve products by name
         // Assuming a repository is being used
         return productRepository.findByName(name);
     }
 
-    // New method to fetch products by price range
     public List<Product> getProductsByPriceRange(int minPrice, int maxPrice) {
         // Call the repository to find products by price range
         return productRepository.findProductsByPriceRange(minPrice, maxPrice);

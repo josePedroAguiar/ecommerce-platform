@@ -1,5 +1,6 @@
 package com.example.productservice.adapters.driving;
 
+import com.example.productservice.application.ports.InboundPort;
 import com.example.productservice.application.ports.ProductDTO;
 import com.example.productservice.application.service.ProductService;
 import com.example.productservice.domain.Product;
@@ -13,10 +14,10 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/products")
-public class ProductController {
+public class ProductController  {
 
     @Autowired
-    private ProductService productService;
+    private InboundPort productService;
 
     // Mapper Method to convert Product to ProductDTO
     private ProductDTO mapToDTO(Product product) {

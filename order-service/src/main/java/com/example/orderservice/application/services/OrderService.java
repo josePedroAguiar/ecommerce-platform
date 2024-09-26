@@ -1,5 +1,6 @@
 package com.example.orderservice.application.services;
 import com.example.orderservice.application.port.OrderRepository;
+import com.example.orderservice.application.port.DrivingPort;
 import com.example.orderservice.domain.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class OrderService {
+public class OrderService implements DrivingPort {
 
     @Autowired
     private OrderRepository orderRepository;

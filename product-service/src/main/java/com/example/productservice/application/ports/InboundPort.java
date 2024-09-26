@@ -11,8 +11,10 @@ public interface InboundPort {
     Product createOrUpdateProduct(Product product,String region);
     void deleteProductById(String id);
 
+    List<Product> getProductsByName(String name);
 
-;
+    List<Product> getProductsByPriceRange(int minPrice, int maxPrice);
+
 
 
 }
