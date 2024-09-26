@@ -1,7 +1,7 @@
-package adapters;
+package com.example.orderservice.adapters.driven.mongodb;
 
-import application.services.OrderRepository;
-import domain.Order;
+import com.example.orderservice.application.port.OrderRepository;
+import com.example.orderservice.domain.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

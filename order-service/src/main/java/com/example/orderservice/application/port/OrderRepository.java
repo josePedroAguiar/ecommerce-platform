@@ -1,6 +1,6 @@
-package application.services;
+package com.example.orderservice.application.port;
 
-import domain.Order;
+import com.example.orderservice.domain.Order;
 
 import java.util.List;
 import java.util.Optional;

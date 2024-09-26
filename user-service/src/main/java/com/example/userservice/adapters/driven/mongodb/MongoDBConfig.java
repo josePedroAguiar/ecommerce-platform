@@ -1,4 +1,4 @@
-package com.example.userservice.infrastructure;
+package com.example.userservice.adapters.driven.mongodb;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.config.AbstractMongoClientConfiguration;
