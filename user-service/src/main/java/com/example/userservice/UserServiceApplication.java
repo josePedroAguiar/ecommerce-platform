@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 public class UserServiceApplication {
 
 	public static void main(String[] args) {
+		System.setProperty("server.port", "8082");
 		SpringApplication.run(UserServiceApplication.class, args);
 	}
 

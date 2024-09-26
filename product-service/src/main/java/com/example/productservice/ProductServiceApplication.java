@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 public class ProductServiceApplication {
 
 	public static void main(String[] args) {
+		System.setProperty("server.port", "8080"); // This line can be remove because Port is already pre define in 8080
 		SpringApplication.run(ProductServiceApplication.class, args);
 	}
 
