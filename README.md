@@ -1,4 +1,4 @@
-# Project Name
+# Ecommerce Platform
 
 ## Overview
 
